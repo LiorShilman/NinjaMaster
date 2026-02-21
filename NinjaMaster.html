@@ -1377,7 +1377,6 @@
                 c.classList.remove('active');
                 if (c.id === `module-${moduleId}`) {
                     c.classList.add('active');
-                    // Re-trigger reveal animations
                     c.querySelectorAll('.reveal').forEach(el => {
                         el.classList.remove('visible');
                         setTimeout(() => checkReveal(el), 50);
