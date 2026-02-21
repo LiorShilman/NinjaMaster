@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINJA MASTER</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+        
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --primary-color: #9f7aea;
+            --secondary-color: #63b3ed;
+            --accent-color: #48bb78;
+            --link-color: #90cdf4;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .modules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .module {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .module:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: var(--accent-color);
+            font-size: 1.4em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-right: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        li::before {
+            content: '▹';
+            color: var(--accent-color);
+            position: absolute;
+            right: -20px;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .modules {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>NINJA MASTER</h1>
+	</header>
+    <div class="container">
+        <div class="modules">
+            <div class="module">
+				<h2>MODULE 1</h2>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=H5CAQeYnDdI" target="_blank">שיעור 1. כלי הבישול של המכשיר</a></li>
+					<li><a href="https://www.youtube.com/watch?v=aCrJNydqRjM" target="_blank">שיעור 2. מגן הנתזים: הסבר והדגמת פירוק והרכבה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=_V4clwSRhG8" target="_blank">שיעור 3. צג המכשיר: להכיר ולהבין כל כפתור</a></li>
+					<li><a href="https://www.youtube.com/watch?v=85cSj-tMBNg" target="_blank">הקדמה והבהרה חשובה בנושא תוכניות הבישול</a></li>
+					<li><a href="https://www.youtube.com/watch?v=2uZlkayya9M" target="_blank">תוכנית GRILL (גריל)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=S_PJ9SBd6To" target="_blank">תוכנית ROST (צלייה)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=m-6E9rDpjyM" target="_blank">תוכנית AIR FRY (טיגון באוויר חם)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Chr25mXmUiE" target="_blank">תוכנית ייבוש (DEHYDRATE)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=AW49PRCSDwU" target="_blank">תוכנית חימום מחדש (REHEAT)</a></li>
+				</ul>
+			</div>
+
+			<div class="module">
+				<h2>MODULE 2</h2>
+				
+				<h3>1 - AIR FRY</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=OJVXyVnIT3s" target="_blank">הכנת שניצל חציל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=kmgN8g6EL6Y" target="_blank">הכנת לביבות תפוחי אדמה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=sKUl0WnxLLY" target="_blank">הכנת לביבות בשר</a></li>
+					<li><a href="https://www.youtube.com/watch?v=AyGTxfupknA" target="_blank">הכנת כנפיים בציפוי פריך</a></li>
+					<li><a href="https://www.youtube.com/watch?v=JO1J5H7Rmuc" target="_blank">הכנת צ'יפס בטטה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=3e9Mqqw7n6o" target="_blank">הכנת שניצל אבוקדו</a></li>
+					<li><a href="https://www.youtube.com/watch?v=51IMZRvhKj0" target="_blank">הכנת שניצל חזה עוף</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Bfk1ZqfE1mM" target="_blank">הכנת פלאפל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=d_Dr_Fqlzms" target="_blank">הכנת צ'יפס תפוחי אדמה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=oCqLMV6HhC4" target="_blank">הכנת חזה עוף בטמפורה</a></li>
+				</ul>
+
+				<h3>2 - GRILL</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=Mp6OZKemhV8" target="_blank">הקדמה לפרק הגריל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=wrezI9Lwqq0" target="_blank">הכנת סטייק בנינג'ה מבוא והדגמה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=_7MN2eWU_Rs" target="_blank">הכנת קאובוי סטייק בשיטת צלייה Reverse Sear</a></li>
+					<li><a href="https://www.youtube.com/watch?v=fBnFOeYiQc0" target="_blank">הכנת סטייק אסדו קוריאני ומיאמי ריבס</a></li>
+					<li><a href="https://www.youtube.com/watch?v=FFHCycxttnU" target="_blank">הכנת דנבר סטייק</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Lcmpxje9Tr8" target="_blank">הכנת חזה עוף בגריל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=odgOw3bd2vY" target="_blank">הכנת טטאקי בשר עם מתכון לרוטב מנגו אסייתי</a></li>
+					<li><a href="https://www.youtube.com/watch?v=lPwhNy9ZGHg" target="_blank">הכנת פרגיות במרינדה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=2sGwyCWvLKY" target="_blank">הכנת 3 סוגי עראייס וקבב</a></li>
+				</ul>
+
+				<h3>3 - ROAST</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=kL2G1joCxRA" target="_blank">הכנת סופריטו עוף ותפוחי אדמה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=pBPI7w1vTKI" target="_blank">הכנת מוקפץ נתחי פרגית וירקות</a></li>
+					<li><a href="https://www.youtube.com/watch?v=72hbu9q4-O0" target="_blank">הכנת פסטרמה חזה עוף</a></li>
+					<li><a href="https://www.youtube.com/watch?v=zkq-s_szuJY" target="_blank">הכנת מנת סוכריות שוקיים</a></li>
+					<li><a href="https://www.youtube.com/watch?v=k7i0a0zQTTc" target="_blank">הכנת עוף שלם</a></li>
+				</ul>
+
+				<h3>4 - BAKE</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=5O12g6lDJvQ" target="_blank">הכנת לחמעג'ון מושלם</a></li>
+					<li><a href="https://www.youtube.com/watch?v=RfK3RvHweFo" target="_blank">הכנת פיתות ביתיות</a></li>
+					<li><a href="https://www.youtube.com/watch?v=LSURVZGpHjw" target="_blank">הכנת חלה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=GhagKbUQd_8" target="_blank">הכנת פוקאצ'ה</a></li>
+					<li><a href="https://www.youtube.com/watch?v=TCVwJrLSulc" target="_blank">הכנת לחם כוסמין (או רגיל)</a></li>
+					<li><a href="https://www.youtube.com/watch?v=5SkaRQqT7hE" target="_blank">הכנת לחמניות</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Yj26f5R8yK0" target="_blank">הכנת פשטידת כרוב</a></li>
+				</ul>
+
+				<h3>5 - DEHYDRATE</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=UQakeQ60hJs" target="_blank">הסבר על תוכנית הייבוש והכנת ביף ג'רקי וצ'יקן ג'רקי</a></li>
+					<li><a href="https://www.youtube.com/watch?v=-T6rNIjtw6Y" target="_blank">הכנת אבקת מרק ביתית</a></li>
+					<li><a href="https://www.youtube.com/watch?v=k8JsASmuPqo" target="_blank">הכנת לדר פירות</a></li>
+				</ul>
+
+				<h3>6 - טכניקות ירקות וסלטים</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=JiEhr4w_Ljc" target="_blank">הכנת חצילים ממולאים ברוטב מדהים</a></li>
+					<li><a href="https://www.youtube.com/watch?v=DkFK22znT_o" target="_blank">הכנת פוטטוס קריספיים</a></li>
+					<li><a href="https://www.youtube.com/watch?v=sHyQz4rry54" target="_blank">הכנת אנטיפסטי</a></li>
+					<li><a href="https://www.youtube.com/watch?v=22PG6zgMYXo" target="_blank">הכנת זעלוק- סלט חצילים מרוקאי</a></li>
+					<li><a href="https://www.youtube.com/watch?v=rRzr4zwXK4A" target="_blank">הכנת מסבחה דלעת</a></li>
+				</ul>
+
+				<h3>7 - שלמות של דגים</h3>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=E9cdlvkQoho" target="_blank">הכנת קציצות דגים ברוטב עגבניות ויין לבן</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Z5PygoXplgI" target="_blank">הכנת מאפה סלמון ולינגטון</a></li>
+					<li><a href="https://www.youtube.com/watch?v=9u2Y5Q9ImDw" target="_blank">הכנת פילה דג בגריל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=c-zyF1Peuyo" target="_blank">הכנת סיגר דג מושלם</a></li>
+					<li><a href="https://www.youtube.com/watch?v=KuVZoKKtr6Y" target="_blank">הכנת דג שלם</a></li>
+				</ul>
+			</div>
+
+			<div class="module">
+				<h2>MODULE 3</h2>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=J-iJHRPXmJo" target="_blank">הכנת פונדנט (וולקנו) שוקולד</a></li>
+					<li><a href="https://www.youtube.com/watch?v=cRff6MXtvVI" target="_blank">הכנת קראנץ' שוקולד</a></li>
+					<li><a href="https://www.youtube.com/watch?v=oGpo2GYcQhM" target="_blank">הכנת עוגיות אוזני פיל</a></li>
+					<li><a href="https://www.youtube.com/watch?v=yaNSgji6plQ" target="_blank">הכנת אקלריים וניל ושוקולד</a></li>
+					<li><a href="https://www.youtube.com/watch?v=UK01x0yisr0" target="_blank">הכנת עוגיות שוקולד צ'יפס</a></li>
+				</ul>
+			</div>
+		</div>
+	<div>
+</body>
+</html>
